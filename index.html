@@ -285,5 +285,20 @@
             console.log('callback - particles.js config loaded');
         });
     </script>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+          e.preventDefault(); // Empêche le menu contextuel
+          alert("Le clic droit est désactivé sur cette page.");
+        });
+    </script>
+    <script>
+    document.addEventListener('keydown', function (e) {
+        // Empêche l'ouverture des outils de développement (F12)
+        if (e.key === "F12" || (e.ctrlKey && (e.key === "s" || e.key === "u"))) {
+        e.preventDefault();
+        alert("Cette action est désactivée sur cette page.");
+        }
+    });
+    </script>
 </body>
 </html>
