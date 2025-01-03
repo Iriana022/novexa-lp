@@ -213,3 +213,9 @@ header{
     background-attachment: fixed!important;
     padding-block: 225px;
 }
+
+@media(max-width:769px){
+    .parallax{
+        display: none;
+    }
+}
