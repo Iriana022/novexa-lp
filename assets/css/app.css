@@ -200,3 +200,8 @@ header .cta{
     position: relative;
     z-index: 2;
 }
+
+header{
+    background: url("../images/bg-header.jpeg")top left no-repeat;
+    background-size: cover;
+}
