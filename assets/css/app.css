@@ -3,6 +3,7 @@ hmtl, body{
     font-family: "Rubik", serif;
     background-color: black;
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 .extra-colors{
@@ -185,6 +186,10 @@ footer{
 
 .menu-footer a:hover{
     color: #44cc00!important;
+}
+
+.menu-footer{
+    flex-wrap: wrap;
 }
 
 .copyright{
