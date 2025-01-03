@@ -37,11 +37,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav text-uppercase">
-                    <a class="nav-link" aria-current="page" href="#apropos">À propos</a>
-                    <a class="nav-link" href="#temoignages">Témoignages</a>
-                    <a class="nav-link" href="#realisations">Réalisations</a>
-                    <a class="nav-link" href="#services">Services</a>
-                    <a class="nav-link" href="#newsletter">Infolettre</a>
+                    <a class="nav-link position-relative" aria-current="page" href="#apropos">À propos</a>
+                    <a class="nav-link position-relative" href="#temoignages">Témoignages</a>
+                    <a class="nav-link position-relative" href="#realisations">Réalisations</a>
+                    <a class="nav-link position-relative" href="#services">Services</a>
+                    <a class="nav-link position-relative" href="#newsletter">Infolettre</a>
                 </div>
                 </div>
             </div>
@@ -225,7 +225,7 @@
                 <a href="#apropos" class="menu-item px-2 text-uppercase text-decoration-none text-white">À propos</a><a href="#temoignages" class="menu-item px-2 text-uppercase text-decoration-none text-white">TÉmoignages</a><a href="#realisations" class="menu-item px-2 text-uppercase text-decoration-none text-white">Réalisations</a><a href="#services" class="menu-item px-2 text-uppercase text-decoration-none text-white">Services</a><a href="#newsletter" class="menu-item px-2 text-uppercase text-decoration-none text-white">Infolettre</a>
             </div>
             <div class="mt-5 copyright pt-5">
-                <p class="text-center">Copyright © 2024 by <span class="extra-colors"> Novexa </span> all right reserved</p>
+                <p class="text-center">Copyright © 2024 by <span class="extra-colors"> Iriana R. </span> all right reserved</p>
             </div>
         </div>
     </footer>
@@ -249,7 +249,7 @@
         })
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        /* document.addEventListener("DOMContentLoaded", function () {
           const header = document.getElementById("menu");
           let lastScrollY = window.scrollY;
       
@@ -263,13 +263,23 @@
       
             lastScrollY = window.scrollY;
           });
-        });
+        }); */
       </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="assets/css/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/thesmart/jquery-scrollspy/jquery-scrollspy.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Active le menu correspondant à la section visible
+            $('body').scrollspy({
+            target: '.navbar-nav',
+            offset: 50, // Ajuste en fonction de la hauteur de ta barre de navigation
+            });
+        });
+    </script>
     <script>
         particlesJS.load('particles-js', 'assets/particles.json', function() {
             console.log('callback - particles.js config loaded');

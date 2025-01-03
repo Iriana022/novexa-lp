@@ -11,10 +11,13 @@ hmtl, body{
 }
 
 .navbar{
-    background-color: transparent!important;
+    background-color: #000!important;
     border-bottom: 1px solid #15181a;
     z-index: 1000;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    left: 0;
+    width: 100%;
 }
 
 .navbar.sticky {
@@ -160,7 +163,7 @@ h2{
 }
 .form-cta a{
     padding: 1rem;
-    background: #22cd6f;
+    background: #44cc00;
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
@@ -223,4 +226,14 @@ header{
     .parallax{
         display: none;
     }
+}
+
+.nav-link.active::after{
+    content: "";
+    max-width: calc(80% - 1.25rem);
+    position: absolute;
+    bottom: -.8rem;
+    left: 1.5rem;
+    width: 100%;
+    border: solid 2px #44cc00;
 }
