@@ -237,3 +237,32 @@ header{
     width: 100%;
     border: solid 2px #44cc00;
 }
+
+footer{
+    background: url(../images/shape-footer.png)center center no-repeat;
+    background-size: auto 75%;
+}
+
+.stroke-text{
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #171c1e;
+    position: absolute;
+    left: 0;
+    top: -65px;
+    z-index: -1;
+}
+
+.owl-nav i{
+    padding: 12px 14px;
+    border:#44cc00 solid 1px;
+    margin-top: -20px;
+    border-radius: 4px;
+}
+
+.owl-nav i:hover{
+    background-color: #44cc00;
+    color: #fff!important;
+}
