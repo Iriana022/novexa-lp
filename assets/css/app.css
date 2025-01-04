@@ -266,3 +266,15 @@ footer{
     background-color: #44cc00;
     color: #fff!important;
 }
+
+@media(max-width: 769px){
+    .navbar{
+        position: relative;
+    }
+    .navbar .container{
+        margin-right: 0!important;
+    }
+    body, html{
+        overflow-x: hidden;
+    }
+}
