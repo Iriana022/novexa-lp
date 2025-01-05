@@ -278,3 +278,82 @@ footer{
         overflow-x: hidden;
     }
 }
+
+.btn-pack{
+    color: #fff;
+    background-color: #44cc00;
+}
+
+.btn-pack:hover{
+    background-color: transparent;
+    color: #44cc00;
+    border: #44cc00 1px solid;
+}
+
+.single-service{
+    background-color: #15181a;
+}
+
+.single-service.active, .single-service:hover {
+    background: #44cc00;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.single-service:hover{
+    transform: translateY(-10px);
+    transition: all 500ms;
+}
+
+.single-service:hover h4{
+    color: #fff!important;
+}
+
+.single-service:hover .btn-pack{
+    color: #fff!important;
+    background-color: #15181a;
+}
+
+.single-service.active h4{
+    color: #fff!important;
+}
+
+.single-service.active .btn-pack{
+    color: #fff;
+    background-color: #15181a;
+}
+
+.custom-list {
+    list-style: none; /* Supprime les puces par défaut */
+    padding-left: 0; /* Supprime l'indentation */
+  }
+  
+  .custom-list li {
+    position: relative;
+    padding-left: 30px; /* Ajoute de l'espace pour l'icône */
+    margin-bottom: 10px; /* Ajoute un espace entre les éléments */
+  }
+
+  .custom-list li::before {
+    content: "\f560";
+    font-family: "FontAwesome";
+    font-size: 17px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Ajuste la taille de l'icône */
+    height: 20px;
+    color: #44cc00;
+  }
+
+  .active .custom-list li::before {
+    color: #fff;
+  }
+
+  .single-service:hover .custom-list li::before{
+    color: #fff;
+  }
+
+  .single-service li, .single-service p{
+    font-size: 1.1rem;
+  }
