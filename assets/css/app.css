@@ -357,3 +357,39 @@ footer{
   .single-service li, .single-service p{
     font-size: 1.1rem;
   }
+
+
+  .accordion-button:not(.collapsed){
+    background-color: #44cc00;
+    font-size: 1.3rem;
+    color: #15181a;
+  }
+
+  .accordion-button:not(.collapsed)::after{
+    background: none;
+    color: #15181a;
+  }
+
+  .accordion-button.collapsed{
+    font-size: 1.3rem;
+    background-color: #15181a;
+    color: #fff;
+    margin-bottom: 10px!important;
+  }
+
+ 
+
+  .accordion-item{
+    background-color: transparent;
+  }
+
+  .accordion-button:after{
+    background: none;
+    content: "\f078";
+    font-family: "FontAwesome";
+    color: #44cc00;
+  }
+
+  .accordion-button:focus{
+    box-shadow: none;
+  }
