@@ -393,3 +393,7 @@ footer{
   .accordion-button:focus{
     box-shadow: none;
   }
+
+  .rs a:hover{
+    color: #44cc00!important;
+  }
